@@ -1,6 +1,6 @@
 {
   "name": "portfolio-app",
-  "private": true,
+  "private": false,
   "homepage": "https://the-8thmoon.github.io",
   "version": "0.0.0",
   "type": "module",
