@@ -2,19 +2,16 @@ import ProfileBio from "./ProfileBio"
 import ProfilePic from "./ProfilePic"
 
 
-function Header(){
+function Profile(){
     return(
-        <>
         <div className="profile-header">
             <ProfilePic/>
             <ProfileBio/>
-
         </div>
-        </>
     )
 }
 
-export default Header
+export default Profile
 
 // function Header() {
 //     return (

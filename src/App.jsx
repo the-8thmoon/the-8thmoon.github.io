@@ -1,4 +1,4 @@
-import Header from "./Header"
+import Profile from "./Profile"
 import NavBar from "./NavBar"
 
 
