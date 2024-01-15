@@ -10,7 +10,7 @@ function NavBar(){
             <a href=""><Logo/></a>
             <div className="nav-buttons-container">
                 <NavButton label="Home"/>
-                <NavButton label="Portfolio" target="\portfolio"/>
+                <NavButton label="Portfolio" target="portfolio/"/>
             </div>
             
         </nav>

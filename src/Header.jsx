@@ -4,11 +4,13 @@ import ProfilePic from "./ProfilePic"
 
 function Header(){
     return(
+        <>
         <div className="profile-header">
             <ProfilePic/>
             <ProfileBio/>
 
         </div>
+        </>
     )
 }
 

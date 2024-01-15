@@ -1,18 +1,22 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const root = resolve(__dirname, 'src')
+const outDir = resolve(__dirname, 'dist')
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "",
+  root,
   plugins: [react()],
-  pages: {
-    index: {
-      entry: 'src/main.jsx',
-      template: 'index.html',
-    },
-    portfolio: {
-      entry: 'src/main-portfolio.jsx',
-      template: 'public/portfolio/index.html',
-    },
-  },
+  build: {
+    outDir,
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: resolve(root, 'index.html'),
+        portfolio: resolve(root, 'portfolio', 'index.html'),
+      }
+    }
+  }
 })

@@ -2,7 +2,7 @@
 
 function ProfileBio(){
     return(
-        <div className="profile-bio">
+        <div>
             <h1>Alan Brito - Moon Follower</h1>
                 <p>
                      Hello! My name is Alan, I'm a gamedev enthusiast, trying to do some art along the way.
