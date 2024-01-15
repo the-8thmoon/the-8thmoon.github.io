@@ -12,7 +12,7 @@ export default defineConfig({
     },
     portfolio: {
       entry: 'src/main.jsx',
-      template: 'portfolio/index.html',
+      template: 'public/portfolio/index.html',
     }
   },
 })
