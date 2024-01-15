@@ -19,9 +19,11 @@ function NavBar(){
 
 function NavButton(props){
     return(
-        <div className={props._class}>
-            <a href={props.target}>{props.label}</a>
-        </div>
+        <a href={props.target}>
+            <div className={props._class}>
+            {props.label}
+            </div>
+        </a>
     )
 }
 

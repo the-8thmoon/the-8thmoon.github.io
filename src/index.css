@@ -55,7 +55,7 @@ h1 {
     padding: 10px;
 }
 
-.nav-button a{
+a .nav-button {
     color:#242424;
     font-size: 1.2em;
 }
@@ -64,7 +64,7 @@ h1 {
     background-color:#242424;
 }
 
-.nav-button:hover a{
+a .nav-button:hover {
     color: aliceblue;
 }
 
@@ -170,6 +170,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     border-top-right-radius: 25px;
+}
+.nav-buttons-container a{
+    width: 100%;
 }
 .nav-button{
     width: 100%;
