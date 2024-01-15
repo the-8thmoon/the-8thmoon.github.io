@@ -5,5 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "",
   plugins: [react()],
-  
+  pages: {
+    index: {
+      entry: 'src/main.jsx',
+      template: 'index.html',
+    },
+    portfolio: {
+      entry: 'src/main-portfolio.jsx',
+      template: 'public/portfolio/index.html',
+    },
+  },
 })
