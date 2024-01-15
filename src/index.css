@@ -46,7 +46,7 @@ h1 {
     align-self:flex-end;
     height: 100%;
     border-top-left-radius: 25px;
-    background-color: black;
+    /* background-color: black; */
     overflow: hidden;
 }
 
@@ -153,4 +153,37 @@ h1 {
     
 .profile-border:hover{
     transform: rotate(360deg);
+}
+
+
+@media (max-width: 640px){
+.logo-container{
+    padding: 5px 20px;
+}
+.nav-bar{
+    width: 100%;
+    display: inline-block;
+}
+.nav-buttons-container{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 25px;
+}
+.nav-button{
+    width: 100%;
+    text-align:center;
+}
+.profile-header{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.profile-bio{
+    width: 100%;
+}
 }
