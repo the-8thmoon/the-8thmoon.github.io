@@ -1,16 +1,40 @@
 import Logo from "./Logo"
-import NavButton from "./NavButton"
+import PropTypes from 'prop-types'
 
 function NavBar(){
+
+    const props = {name: "label", target: "", _class:"nav-button"}
+
     return(
         <nav className="nav-bar">
-            <Logo/>
+            <a href=""><Logo/></a>
             <div className="nav-buttons-container">
-                
+                <NavButton label="Home"/>
+                <NavButton label="Portfolio" target="/portfolio.html"/>
             </div>
             
         </nav>
     )
 }
 
-export default NavBar
+function NavButton(props){
+    return(
+        <div className={props._class}>
+            <a href={props.target}>{props.label}</a>
+        </div>
+    )
+}
+
+NavButton.PropTypes = {
+    _class: PropTypes.string,
+    target: PropTypes.string,
+    label: PropTypes.string
+}
+
+NavButton.defaultProps = {
+    _class: "nav-button",
+    target: "/",
+    label: "Button"
+}
+
+export default NavBar; NavButton

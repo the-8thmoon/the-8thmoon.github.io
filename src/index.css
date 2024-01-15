@@ -6,11 +6,16 @@
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
-
+    
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none;
 }
 
 * {
@@ -20,6 +25,7 @@
 body{
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: 0px;
 }
 
 h1 {
@@ -30,7 +36,8 @@ h1 {
 .nav-bar{
     display: flex;
     width: auto;
-    box-shadow: 0px 5px 10px -5px hsl(0, 0%, 0%, 0.5);
+    background-color: hsl(200, 71%, 26%);
+    box-shadow: 0px 5px 10px -5px hsl(0, 0%, 0%);
     justify-content: space-between;
 }
 
@@ -38,11 +45,27 @@ h1 {
     display: flex;
     align-self:flex-end;
     height: 100%;
+    border-top-left-radius: 25px;
+    background-color: black;
+    overflow: hidden;
 }
 
 .nav-button{
     background-color: aliceblue;
-    padding: 5px;
+    padding: 10px;
+}
+
+.nav-button a{
+    color:#242424;
+    font-size: 1.2em;
+}
+
+.nav-button:hover{
+    background-color:#242424;
+}
+
+.nav-button:hover a{
+    color: aliceblue;
 }
 
 .logo-container{
@@ -65,6 +88,18 @@ h1 {
 
 .logo-title{
     padding-left: 15px;
+}
+
+.logo-title h2{
+    text-shadow: 0px 0px 8px hsla(0, 0%, 0%, 1);
+}
+
+.logo-container:hover h2{
+    text-shadow: 0px 0px 8px hsla(255, 100%, 100%, .5);
+}
+
+.logo-container:hover .logo-img{
+    box-shadow: 0px 0px 5px 1px hsla(255, 100%, 100%);
 }
 
 
