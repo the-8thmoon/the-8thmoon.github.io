@@ -136,16 +136,6 @@ a .nav-button:hover {
     margin: 10px;
 }
 
-.tab {display:none}
-
-.default-tab {display:block}
-
-:target ~ .default-tab {display:none}
-
-#tab1:target ~ .tab1,
-#tab2:target ~ .tab2 {
-  display: block
-}
 
 .profile-picture .profile-image{
     width: 200px;
