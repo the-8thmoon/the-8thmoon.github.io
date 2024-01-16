@@ -123,9 +123,28 @@ a .nav-button:hover {
     margin: 5px;
 }
 
+.profile-bio h1 {
+    color: #FBC531;
+}
+
+.profile-bio p {
+    text-align: justify;
+}
+
 .profile-picture{
     padding: 20px;
     margin: 10px;
+}
+
+.tab {display:none}
+
+.default-tab {display:block}
+
+:target ~ .default-tab {display:none}
+
+#tab1:target ~ .tab1,
+#tab2:target ~ .tab2 {
+  display: block
 }
 
 .profile-picture .profile-image{
