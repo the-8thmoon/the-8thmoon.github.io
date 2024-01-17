@@ -39,4 +39,4 @@ NavButton.defaultProps = {
     label: "Button"
 }
 
-export default NavBar; NavButton
+export default NavBar

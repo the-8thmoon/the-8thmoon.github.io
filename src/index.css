@@ -140,9 +140,9 @@ a .nav-button:hover {
 .profile-picture .profile-image{
     width: 200px;
     height: auto;
-    position: absolute;
     padding: 20px;
     margin: 10px;
+    position: absolute;
     box-shadow: 0px 0px 20px 1px black;
     border-radius: 50%;
 }
@@ -164,6 +164,62 @@ a .nav-button:hover {
     transform: rotate(360deg);
 }
 
+
+.elements-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.item-container {
+    display: inline-block;
+    background-color: #1b1b1b;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    width: 300px;
+    padding-bottom: 25px;
+    margin: 20px;
+}
+
+
+.item-img{
+    position: relative;
+}
+
+.item-img img{
+    width: 100%;
+}
+
+.item-title{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    box-shadow: inset 0px -50px 20px -15px hsl(0, 0%, 11%, 1);;
+}
+.item-title h2{
+    margin: 0px;
+}
+
+.item-info{
+    padding: 0px 10px;
+    height: 80px;
+}
+.item-info p{
+    margin-top: 0px;
+}
+
+.tag{
+    background-color: hsl(0, 0%, 14%, 0.9);
+    width: fit-content;
+    padding: 2px 10px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-size: 10px;
+}
 
 @media (max-width: 640px){
 .logo-container{
@@ -198,4 +254,10 @@ a .nav-button:hover {
 .profile-bio{
     width: 100%;
 }
+
+.elements-content{
+    flex-direction: column;
+    align-items: center;
+}
+
 }
