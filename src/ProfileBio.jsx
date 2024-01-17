@@ -15,7 +15,7 @@ function ProfileBio(){
                 <p>
                      Hello! My name is Alan, I'm a C# developer with vast experience in Game Dev (Unity). <br></br>
                      Currently exploring Web Development via <b>ASP.NET</b> and <b>React.js</b>.<br></br> 
-                     I like to experiment with different kind of projects, eithr by curiosity or by solving self-imposed problems
+                     I like to experiment with different kind of projects, either by curiosity or by solving self-imposed problems
                 </p>
         </div>
     )
