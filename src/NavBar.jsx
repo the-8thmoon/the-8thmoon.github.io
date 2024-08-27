@@ -6,14 +6,16 @@ function NavBar(){
     const props = {name: "label", target: "", _class:"nav-button"}
 
     return(
-        <nav className="nav-bar">
-            <a href="/"><Logo/></a>
-            <div className="nav-buttons-container">
-                <NavButton label="Home"/>
-                <NavButton label="Portfolio" target="/portfolio/"/>
+        <nav className="header">
+            <div className="nav-bar">
+                <a href="/"><Logo/></a>
+                <div className="nav-buttons-container">
+                    <NavButton label="Home"/>
+                    {/* <NavButton label="Portfolio" target="/portfolio/"/> */}
+                </div>
             </div>
-            
         </nav>
+        
     )
 }
 
