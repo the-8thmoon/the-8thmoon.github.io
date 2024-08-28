@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 function Elements(){
     return(
-        <div className="elements-content">
+        <div id="Projects" className="elements-content">
             <Item itemTag={<GameDevTag/>} 
                   imageSrc="https://img.itch.zone/aW1nLzEzMTI1NzcwLnBuZw==/315x250%23c/X0gvNg.png"
                   title="FreeZE"

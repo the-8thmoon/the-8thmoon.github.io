@@ -10,7 +10,7 @@ function NavBar(){
             <div className="nav-bar">
                 <a href="/"><Logo/></a>
                 <div className="nav-buttons-container">
-                    <NavButton label="Home"/>
+                    <NavButton label="Projects" target="#Projects"/>
                     {/* <NavButton label="Portfolio" target="/portfolio/"/> */}
                 </div>
             </div>
@@ -23,7 +23,7 @@ function NavButton(props){
     return(
         <a href={props.target}>
             <div className={props._class}>
-            {props.label}
+                {props.label}
             </div>
         </a>
     )
