@@ -26,6 +26,11 @@ body{
     margin: 0px;
 }
 
+::selection{
+    color:#242424;
+    background: aliceblue;
+}
+
 h1 {
     font-size: 2.8em;
     line-height: 1.1;
@@ -41,6 +46,7 @@ h1 {
     margin: 0 10%;
     justify-content: space-between;
     display: flex;
+    padding: 0 35px;
 }
 
 .nav-buttons-container{
@@ -53,10 +59,9 @@ h1 {
     overflow: hidden;
 }
 
-.nav-button{
-    /* background-color: aliceblue; */
+/* .nav-button{
     padding: 10px;
-}
+} */
 
 a .nav-button {
     /* color:#242424; */
@@ -89,7 +94,6 @@ a .nav-button:hover {
 }
 
 .logo-container{
-    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -134,7 +138,7 @@ a .nav-button:hover {
 
 
 .profile-header{
-    padding: 80px 40px 80px 40px;
+    padding: 80px 40px 120px 40px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -152,6 +156,10 @@ a .nav-button:hover {
 
 .profile-bio p {
     text-align: justify;
+}
+
+.profile-bio p b{
+    color:#FBC531;
 }
 
 .profile-picture{
@@ -188,10 +196,45 @@ a .nav-button:hover {
 }
 
 
-.elements-content{
+.separator{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    width: auto;
+    /* background-color:hsl(200, 71%, 26%); */
+}
+
+.separator::before{
+    content:  "";
+    display: flex;
+    height: 0.05em;
+    width: 100%;
+    margin: 40px;
+    position: relative;
+    align-self: center;
+    background-color: aliceblue;
+}
+
+.separator::after{
+    content:  "";
+    display: flex;
+    height: 0.05em;
+    width: 100%;
+    margin: 40px;
+    position: relative;
+    align-self: center;
+    background-color: aliceblue;
+}
+
+.separator h1{
+    color: aliceblue;
+}
+
+
+.elements-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
 .item-container {
@@ -205,6 +248,9 @@ a .nav-button:hover {
     margin: 20px;
 }
 
+.item-container:hover{
+    width: 320px;
+}
 
 .item-img{
     position: relative;

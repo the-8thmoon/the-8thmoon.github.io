@@ -1,0 +1,60 @@
+[
+    {
+        "title": "Projects",
+        "items": [
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzE3NDY2NDE1LnBuZw==/315x250%23c/NfyFkF.png",
+                "title": "Ant Scaled",
+                "description": "RTS-like game where you command Ants, made for the GMTK Game Jam 2024"
+            },
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzEzMTI1NzcwLnBuZw==/315x250%23c/X0gvNg.png",
+                "title": "FreeZE",
+                "description": "2D top-down puzzle game, made for a week-long game jam"
+            },
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzEwOTE1MDEzLnBuZw==/315x250%23c/vN6l%2Bf.png",
+                "title": "White Wonders",
+                "description": "VN Demo made for a VN focused game jam"
+            },
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
+                "title": "Event Story",
+                "description": "3D First Person Point & Click, Text Interactive game, made for a School project"
+            }
+        ]
+    },
+    {
+        "title": "Projects",
+        "items": [
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzEzMTI1NzcwLnBuZw==/315x250%23c/X0gvNg.png",
+                "title": "FreeZE",
+                "description": "2D top-down puzzle game, made for a week-long game jam"
+            },
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzEwOTE1MDEzLnBuZw==/315x250%23c/vN6l%2Bf.png",
+                "title": "White Wonders",
+                "description": "VN Demo made for a VN focused game jam"
+            },
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
+                "title": "Event Story",
+                "description": "3D First Person Point & Click, Text Interactive game, made for a School project"
+            },
+            {
+                "tag": "GameDev",
+                "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
+                "title": "Event Story",
+                "description": "3D First Person Point & Click, Text Interactive game, made for a School project"
+            }
+        ]
+    }
+]
