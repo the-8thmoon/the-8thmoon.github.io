@@ -6,54 +6,365 @@
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzE3NDY2NDE1LnBuZw==/315x250%23c/NfyFkF.png",
                 "title": "Ant Scaled",
-                "description": "RTS-like game where you command Ants, made for the GMTK Game Jam 2024"
+                "info": {
+                    "description": "RTS-like game where you command Ants, made for the GMTK Game Jam 2024",
+                    "sections": [
+                        {
+                            "title": "Motivation:",
+                            "content": "For the GMTK Game Jam 2024, with the theme of \"Built to Scale\" I decided to make a game where you can spawn and command units (Ants) that you can use to explore a map covered with a fog of war, to find other structures that you can interact with."
+                        },
+                        {
+                            "title": "Roles:",
+                            "content": "For this game I took the role of a solo-dev, so all the code and features were done by myself with the help of free Assets for the graphics."
+                        },
+                        {
+                            "title": "Main Features:",
+                            "list": [
+                                {
+                                    "item": "Spawning of units: Spawns unlimeted units (Ants) with the click of a button on screen."
+                                },
+                                {
+                                    "item": "Selection of units:",
+                                    "list": [
+                                        {
+                                            "item": "Box Selection: Click and drag a box selection to select multiple units."
+                                        },
+                                        {
+                                            "item": "Individual Selection: Click on a single unit to select it."
+                                        },
+                                        {
+                                            "item": "Multiple Selection: Hold Left-CTRL + Click to select multiple units one at a time."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Selection of structures: Click on a structure to interact with it."
+                                },
+                                {
+                                    "item": "Movement of units with Pathfinding: Right Clicking on the map moves the selected units to that location avoiding obstacles and finding the best route to get there."
+                                },
+                                {
+                                    "item": "Fog of War: The map is covered by two layers of fog.",
+                                    "list": [
+                                        {
+                                            "item": "Dark Fog: This fog is pitch black and gets erased when units travel through the map."
+                                        },
+                                        {
+                                            "item": "Soft Fog: This fog lets you see the map but with a faded effect, it is located under the Dark Fog layer. Units and some structures have a defined radius where you can the see the clear map underneath."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Skills:",
+                            "list": [
+                                {
+                                    "item": "Unity: For the game engine.",
+                                    "list": [
+                                        {
+                                            "item": "Hex Tilemap System: For the map and fog of war (Dark Fog)."
+                                        },
+                                        {
+                                            "item": "Input System: For the selection and command of units."
+                                        },
+                                        {
+                                            "item": "NavMesh: For the pathfinding and movement of units."
+                                        },
+                                        {
+                                            "item": "Canvas UI: For UI interaction with structures."
+                                        },
+                                        {
+                                            "item": "Sprite Mask 2D: For the Soft Fog of the fog of war."
+                                        },
+                                        {
+                                            "item": "WebGL Export: To generate a playable game in the browser."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Aseprite: To edit and create some pixel art graphics."
+                                },
+                                {
+                                    "item": "Autodesk Sketchbook: To create the game's cover image."
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzEzMTI1NzcwLnBuZw==/315x250%23c/X0gvNg.png",
                 "title": "FreeZE",
-                "description": "2D top-down puzzle game, made for a week-long game jam"
+                "info": {
+                    "description": "2D top-down puzzle game, made for a week-long game jam",
+                    "sections": [
+                        {
+                            "title": "Motivation:",
+                            "content": "For the GMTK Game Jam 2024, with the theme of \"Built to Scale\" I decided to make a game where you can spawn and command units (Ants) that you can use to explore a map covered with a fog of war, to find other structures that you can interact with."
+                        },
+                        {
+                            "title": "Roles:",
+                            "content": "For this game I took the role of a solo-dev, so all the code and features were done by myself with the help of free Assets for the graphics."
+                        },
+                        {
+                            "title": "Main Features:",
+                            "list": [
+                                {
+                                    "item": "Spawning of units: Spawns unlimeted units (Ants) with the click of a button on screen."
+                                },
+                                {
+                                    "item": "Selection of units:",
+                                    "list": [
+                                        {
+                                            "item": "Box Selection: Click and drag a box selection to select multiple units."
+                                        },
+                                        {
+                                            "item": "Individual Selection: Click on a single unit to select it."
+                                        },
+                                        {
+                                            "item": "Multiple Selection: Hold Left-CTRL + Click to select multiple units one at a time."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Selection of structures: Click on a structure to interact with it."
+                                },
+                                {
+                                    "item": "Movement of units with Pathfinding: Right Clicking on the map moves the selected units to that location avoiding obstacles and finding the best route to get there."
+                                },
+                                {
+                                    "item": "Fog of War: The map is covered by two layers of fog.",
+                                    "list": [
+                                        {
+                                            "item": "Dark Fog: This fog is pitch black and gets erased when units travel through the map."
+                                        },
+                                        {
+                                            "item": "Soft Fog: This fog lets you see the map but with a faded effect, it is located under the Dark Fog layer. Units and some structures have a defined radius where you can the see the clear map underneath."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Skills:",
+                            "list": [
+                                {
+                                    "item": "Unity: For the game engine.",
+                                    "list": [
+                                        {
+                                            "item": "Hex Tilemap System: For the map and fog of war (Dark Fog)."
+                                        },
+                                        {
+                                            "item": "Input System: For the selection and command of units."
+                                        },
+                                        {
+                                            "item": "NavMesh: For the pathfinding and movement of units."
+                                        },
+                                        {
+                                            "item": "Canvas UI: For UI interaction with structures."
+                                        },
+                                        {
+                                            "item": "Sprite Mask 2D: For the Soft Fog of the fog of war."
+                                        },
+                                        {
+                                            "item": "WebGL Export: To generate a playable game in the browser."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Aseprite: To edit and create some pixel art graphics."
+                                },
+                                {
+                                    "item": "Autodesk Sketchbook: To create the game's cover image."
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzEwOTE1MDEzLnBuZw==/315x250%23c/vN6l%2Bf.png",
                 "title": "White Wonders",
-                "description": "VN Demo made for a VN focused game jam"
+                "info": {
+                    "description": "VN Demo made for a VN focused game jam",
+                    "sections": [
+                        {
+                            "title": "Motivation:",
+                            "content": "For the GMTK Game Jam 2024, with the theme of \"Built to Scale\" I decided to make a game where you can spawn and command units (Ants) that you can use to explore a map covered with a fog of war, to find other structures that you can interact with."
+                        },
+                        {
+                            "title": "Roles:",
+                            "content": "For this game I took the role of a solo-dev, so all the code and features were done by myself with the help of free Assets for the graphics."
+                        },
+                        {
+                            "title": "Main Features:",
+                            "list": [
+                                {
+                                    "item": "Spawning of units: Spawns unlimeted units (Ants) with the click of a button on screen."
+                                },
+                                {
+                                    "item": "Selection of units:",
+                                    "list": [
+                                        {
+                                            "item": "Box Selection: Click and drag a box selection to select multiple units."
+                                        },
+                                        {
+                                            "item": "Individual Selection: Click on a single unit to select it."
+                                        },
+                                        {
+                                            "item": "Multiple Selection: Hold Left-CTRL + Click to select multiple units one at a time."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Selection of structures: Click on a structure to interact with it."
+                                },
+                                {
+                                    "item": "Movement of units with Pathfinding: Right Clicking on the map moves the selected units to that location avoiding obstacles and finding the best route to get there."
+                                },
+                                {
+                                    "item": "Fog of War: The map is covered by two layers of fog.",
+                                    "list": [
+                                        {
+                                            "item": "Dark Fog: This fog is pitch black and gets erased when units travel through the map."
+                                        },
+                                        {
+                                            "item": "Soft Fog: This fog lets you see the map but with a faded effect, it is located under the Dark Fog layer. Units and some structures have a defined radius where you can the see the clear map underneath."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Skills:",
+                            "list": [
+                                {
+                                    "item": "Unity: For the game engine.",
+                                    "list": [
+                                        {
+                                            "item": "Hex Tilemap System: For the map and fog of war (Dark Fog)."
+                                        },
+                                        {
+                                            "item": "Input System: For the selection and command of units."
+                                        },
+                                        {
+                                            "item": "NavMesh: For the pathfinding and movement of units."
+                                        },
+                                        {
+                                            "item": "Canvas UI: For UI interaction with structures."
+                                        },
+                                        {
+                                            "item": "Sprite Mask 2D: For the Soft Fog of the fog of war."
+                                        },
+                                        {
+                                            "item": "WebGL Export: To generate a playable game in the browser."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Aseprite: To edit and create some pixel art graphics."
+                                },
+                                {
+                                    "item": "Autodesk Sketchbook: To create the game's cover image."
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
                 "title": "Event Story",
-                "description": "3D First Person Point & Click, Text Interactive game, made for a School project"
-            }
-        ]
-    },
-    {
-        "title": "Projects",
-        "items": [
-            {
-                "tag": "GameDev",
-                "img": "https://img.itch.zone/aW1nLzEzMTI1NzcwLnBuZw==/315x250%23c/X0gvNg.png",
-                "title": "FreeZE",
-                "description": "2D top-down puzzle game, made for a week-long game jam"
-            },
-            {
-                "tag": "GameDev",
-                "img": "https://img.itch.zone/aW1nLzEwOTE1MDEzLnBuZw==/315x250%23c/vN6l%2Bf.png",
-                "title": "White Wonders",
-                "description": "VN Demo made for a VN focused game jam"
-            },
-            {
-                "tag": "GameDev",
-                "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
-                "title": "Event Story",
-                "description": "3D First Person Point & Click, Text Interactive game, made for a School project"
-            },
-            {
-                "tag": "GameDev",
-                "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
-                "title": "Event Story",
-                "description": "3D First Person Point & Click, Text Interactive game, made for a School project"
+                "info": {
+                    "description": "3D First Person Point & Click, Text Interactive game, made for a School project",
+                    "sections": [
+                        {
+                            "title": "Motivation:",
+                            "content": "For the GMTK Game Jam 2024, with the theme of \"Built to Scale\" I decided to make a game where you can spawn and command units (Ants) that you can use to explore a map covered with a fog of war, to find other structures that you can interact with."
+                        },
+                        {
+                            "title": "Roles:",
+                            "content": "For this game I took the role of a solo-dev, so all the code and features were done by myself with the help of free Assets for the graphics."
+                        },
+                        {
+                            "title": "Main Features:",
+                            "list": [
+                                {
+                                    "item": "Spawning of units: Spawns unlimeted units (Ants) with the click of a button on screen."
+                                },
+                                {
+                                    "item": "Selection of units:",
+                                    "list": [
+                                        {
+                                            "item": "Box Selection: Click and drag a box selection to select multiple units."
+                                        },
+                                        {
+                                            "item": "Individual Selection: Click on a single unit to select it."
+                                        },
+                                        {
+                                            "item": "Multiple Selection: Hold Left-CTRL + Click to select multiple units one at a time."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Selection of structures: Click on a structure to interact with it."
+                                },
+                                {
+                                    "item": "Movement of units with Pathfinding: Right Clicking on the map moves the selected units to that location avoiding obstacles and finding the best route to get there."
+                                },
+                                {
+                                    "item": "Fog of War: The map is covered by two layers of fog.",
+                                    "list": [
+                                        {
+                                            "item": "Dark Fog: This fog is pitch black and gets erased when units travel through the map."
+                                        },
+                                        {
+                                            "item": "Soft Fog: This fog lets you see the map but with a faded effect, it is located under the Dark Fog layer. Units and some structures have a defined radius where you can the see the clear map underneath."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Skills:",
+                            "list": [
+                                {
+                                    "item": "Unity: For the game engine.",
+                                    "list": [
+                                        {
+                                            "item": "Hex Tilemap System: For the map and fog of war (Dark Fog)."
+                                        },
+                                        {
+                                            "item": "Input System: For the selection and command of units."
+                                        },
+                                        {
+                                            "item": "NavMesh: For the pathfinding and movement of units."
+                                        },
+                                        {
+                                            "item": "Canvas UI: For UI interaction with structures."
+                                        },
+                                        {
+                                            "item": "Sprite Mask 2D: For the Soft Fog of the fog of war."
+                                        },
+                                        {
+                                            "item": "WebGL Export: To generate a playable game in the browser."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "item": "Aseprite: To edit and create some pixel art graphics."
+                                },
+                                {
+                                    "item": "Autodesk Sketchbook: To create the game's cover image."
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         ]
     }

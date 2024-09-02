@@ -20,7 +20,7 @@ function Elements(){
                 <div>
                 <Separator title={element["title"]}/>
                 <div className="elements-content">
-                {element["items"].map(value => <Item itemTag={<Tag tag={value.tag}/>} imageSrc={value.img} title={value.title} description={value.description}/>)              
+                {element["items"].map(value => <Item itemTag={<Tag tag={value.tag}/>} imageSrc={value.img} title={value.title} info={value.info}/>)
                 }
                 </div>
                 </div>
@@ -50,22 +50,38 @@ function Elements(){
 }
 
 export function Item(props){
+    
+    
+    const info = props.info;
+    console.log(info);
+    const description = info["description"];
+    const sections = info["sections"];
+    const elements = sections.map(section => 
+        section.hasOwnProperty("content") ?
+            <SimpleSection  title={section.title} content={section.content}/> : <NestedSection title={section.title} list={section.list}/>)
+
+
     return(
         <div className="item-container">
-            <a href={props.href}>
+            <div className='item-img-container'>
+
                 <div className="item-thumbnail">
                     <div className="item-img">                                                                                                                                                                                                                                                                                                            
-                        <div className="item-title">
-                            {props.itemTag}
-                            <h2>{props.title}</h2>
-                        </div>
                         <img src={props.imageSrc}></img>
                     </div>
                 </div>
-                <div className="item-info">
-                    <p>{props.description}</p>
+            </div>
+            <div className='item-info-container'>
+                <div className="item-title">
+                    <h2>{props.title}</h2>
+                    {props.itemTag}
                 </div>
-            </a>
+                <div className="item-info">
+                    <p>{description}</p>
+                    {elements}
+                    {/* <p>{props.description}</p> */}
+                </div>
+            </div>
         </div>
     )
 }
@@ -74,16 +90,15 @@ Item.PropTypes = {
     itemTag: PropTypes.Tag,
     title: PropTypes.string,
     imageSrc: PropTypes.string,
-    description: PropTypes.string,
+    info: PropTypes.json,
     href: PropTypes.string
 }
 Item.defaultProps = {
     title: "Title",
     imageSrc: "https://via.placeholder.com/250",
-    description: "Description...",
+    info: {},
     href: ""
 }
-
 
 
 function Tag(props){
@@ -106,6 +121,84 @@ function GameDevTag(){
         <Tag tag="Game Dev"/>
     )
 }
+
+
+function SectionTitle(props){
+    return(
+        <h3>{props.title}</h3>
+    )
+}
+
+function SimpleSection(props){
+    return(
+        <div className='info-section'>
+            <SectionTitle title={props.title}/>
+            <p>{props.content}</p>
+        </div>
+    )
+}
+
+function NestedSection(props){
+    return(
+        <div className='info-section'>
+            <SectionTitle title={props.title}/>
+            <ListSection list={props.list}/>
+        </div>
+    )
+}
+
+function ListSection(props){
+
+    const items = props.list;
+    const elements = items.map((item,index) => item.hasOwnProperty("list") ? <>
+        <li key={index}><b>{item["item"].split(":")[0]+":"}</b>{item["item"].split(":")[1]}</li> 
+        <ListSection list={item["list"]}/>
+        </> : 
+        <li key={index}><b>{item["item"].split(":")[0]+":"}</b>{item["item"].split(":")[1]}</li>)
+
+    return(
+        <ul className='list-section'>
+            {elements}
+        </ul>
+    )
+}
+
+SimpleSection.PropTypes = {
+    title: PropTypes.string,
+    content: PropTypes.string
+}
+
+SimpleSection.defaultProps = {
+    title: "",
+    content: ""
+}
+
+
+// function ItemList(props){
+//     const title = props.title;
+//     const items = props.items.map((item, index) => <BulletPoint p />
+//     return(
+//         <></>
+//     )
+// }
+
+
+// function BulletPoint(props){
+//     return(
+//         <li><b>{props.left}:</b> {props.right}</li>
+//     )
+// }
+
+
+// BulletPoint.PropTypes = {
+//     left: PropTypes.string,
+//     right: PropTypes.string
+// }
+
+// BulletPoint.defaultProps = {
+//     left: "",
+//     right: ""
+// }
 
 
 export default Elements

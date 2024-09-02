@@ -14,8 +14,8 @@ function ProfileBio(){
                 </p> */}
                 <p>
                      Hallo! I'm Alan. I'm an enthusiastic <b>Game Developer</b> based in Santiago, Chile.<br></br>
-                     I like to experiment with different kinds of projects covering diverse areas of game development, being <b>Gameplay Programming</b> my specialization.
-                     I focus on delivering functional and (somewhat) visually pleasing creations and experiences.
+                     I like to experiment with different kinds of projects covering diverse areas of game development, but I specialize mostly in <b>Gameplay Programming</b>.<br></br>
+                     My focus is to deliver functional and (somewhat) visually pleasing creations and experiences.
 
                 </p>
         </div>
