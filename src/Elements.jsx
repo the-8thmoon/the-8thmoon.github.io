@@ -3,10 +3,11 @@ import Separator from './Separator';
 
 import React, {useState, useEffect} from "react";
 
-const response = await fetch("assets/data.json");
-const data = await response.json();
+import data from '../public/data.json'
 
-console.log(data)
+// const response = fetch("public/data.json");
+// const data = response.json();
+
 
 function Elements(){
 
