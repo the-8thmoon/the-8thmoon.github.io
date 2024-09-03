@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import Separator from './Separator';
 
+import React, {useState, useEffect} from "react";
+
 const response = await fetch("assets/data.json");
 const data = await response.json();
 
@@ -53,23 +55,48 @@ export function Item(props){
     
     
     const info = props.info;
-    console.log(info);
     const description = info["description"];
     const sections = info["sections"];
     const elements = sections.map(section => 
         section.hasOwnProperty("content") ?
             <SimpleSection  title={section.title} content={section.content}/> : <NestedSection title={section.title} list={section.list}/>)
+            
+    const [width, setWidth] = useState(window.innerWidth);
 
+    useEffect(() =>{
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        }
+    })
+
+    function handleResize(){
+        setWidth(window.innerWidth);
+    }
+
+            
+    useEffect(() => {
+        const itemImgHeight = document.getElementsByClassName("item-img").item(0).clientHeight;
+        const itemTitleHeight = document.getElementsByClassName("item-title").item(0).clientHeight;
+        const infoContainers = document.getElementsByClassName("item-info");
+        const height = itemImgHeight - itemTitleHeight;
+        for (var i = 0; i < infoContainers.length; i++)
+        {
+            if (width > 768)
+                infoContainers[i].setAttribute("style", "height:"+height.toString()+"px");
+            else
+                infoContainers[i].setAttribute("style", "height: auto");
+
+        }
+    }, [width])
 
     return(
         <div className="item-container">
             <div className='item-img-container'>
-
-                <div className="item-thumbnail">
-                    <div className="item-img">                                                                                                                                                                                                                                                                                                            
+                <div className="item-img">                                                                                                                                                                                                                                                                                                            
                         <img src={props.imageSrc}></img>
-                    </div>
-                </div>
+                </div>    
             </div>
             <div className='item-info-container'>
                 <div className="item-title">
