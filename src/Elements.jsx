@@ -94,9 +94,10 @@ export function Item(props){
 
     return(
         <div className="item-container">
-            <div className='item-img-container'>
+            <div className='item-img-container'> 
                 <div className="item-img">                                                                                                                                                                                                                                                                                                            
-                        <img src={props.imageSrc}></img>
+                        <img className="main-img" src={props.imageSrc}></img>
+                        <img className="hover-img" src="https://img.itch.zone/aW1hZ2UvMjkwMzkxMy8xNzY0MDIyMy5naWY=/347x500/fSDct1.gif"></img>
                 </div>    
             </div>
             <div className='item-info-container'>

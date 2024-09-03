@@ -21,7 +21,7 @@
                             "title": "Main Features:",
                             "list": [
                                 {
-                                    "item": "Spawning of units: Spawns unlimeted units (Ants) with the click of a button on screen."
+                                    "item": "Spawning of units: Spawn unlimited units (Ants) with the click of a button on screen."
                                 },
                                 {
                                     "item": "Selection of units:",
@@ -33,7 +33,7 @@
                                             "item": "Individual Selection: Click on a single unit to select it."
                                         },
                                         {
-                                            "item": "Multiple Selection: Hold Left-CTRL + Click to select multiple units one at a time."
+                                            "item": "Multiple Selection: Hold LeftCTRL + Click to select multiple units one at a time."
                                         }
                                     ]
                                 },
@@ -278,7 +278,7 @@
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
-                "title": "Event Story",
+                "title": "Tamara Linda",
                 "info": {
                     "description": "3D First Person Point & Click, Text Interactive game, made for a School project",
                     "sections": [
