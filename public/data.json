@@ -5,6 +5,7 @@
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzE3NDY2NDE1LnBuZw==/315x250%23c/NfyFkF.png",
+                "gif": "https://img.itch.zone/aW1hZ2UvMjkwMzkxMy8xNzY0MDIyMy5naWY=/347x500/fSDct1.gif",
                 "title": "Ant Scaled",
                 "info": {
                     "description": "RTS-like game where you command Ants, made for the GMTK Game Jam 2024",
@@ -96,6 +97,7 @@
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzEzMTI1NzcwLnBuZw==/315x250%23c/X0gvNg.png",
+                "gif": "https://img.itch.zone/aW1hZ2UvMjIxNTY2MS8xNzY1MTM1NC5naWY=/250x600/Dda57I.gif",
                 "title": "FreeZE",
                 "info": {
                     "description": "2D top-down puzzle game, made for a week-long game jam",
@@ -187,6 +189,7 @@
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzEwOTE1MDEzLnBuZw==/315x250%23c/vN6l%2Bf.png",
+                "gif": "https://img.itch.zone/aW1hZ2UvMTg1ODI2NC8xNzY1MTYzNS5naWY=/250x600/YNmlWp.gif",
                 "title": "White Wonders",
                 "info": {
                     "description": "VN Demo made for a VN focused game jam",
@@ -278,7 +281,8 @@
             {
                 "tag": "GameDev",
                 "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
-                "title": "Tamara Linda",
+                "gif": "https://img.itch.zone/aW1hZ2UvNzk2MDc3LzE3NjUxOTEzLmdpZg==/250x600/GII4fY.gif",
+                "title": "EventStory",
                 "info": {
                     "description": "3D First Person Point & Click, Text Interactive game, made for a School project",
                     "sections": [

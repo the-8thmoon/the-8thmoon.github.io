@@ -23,7 +23,7 @@ function Elements(){
                 <div>
                 <Separator title={element["title"]}/>
                 <div className="elements-content">
-                {element["items"].map(value => <Item itemTag={<Tag tag={value.tag}/>} imageSrc={value.img} title={value.title} info={value.info}/>)
+                {element["items"].map(value => <Item itemTag={<Tag tag={value.tag}/>} imageSrc={value.img} gifSrc={value.gif} title={value.title} info={value.info}/>)
                 }
                 </div>
                 </div>
@@ -97,7 +97,7 @@ export function Item(props){
             <div className='item-img-container'> 
                 <div className="item-img">                                                                                                                                                                                                                                                                                                            
                         <img className="main-img" src={props.imageSrc}></img>
-                        <img className="hover-img" src="https://img.itch.zone/aW1hZ2UvMjkwMzkxMy8xNzY0MDIyMy5naWY=/347x500/fSDct1.gif"></img>
+                        <img className="hover-img" src={props.gifSrc}></img>
                 </div>    
             </div>
             <div className='item-info-container'>
@@ -119,12 +119,14 @@ Item.PropTypes = {
     itemTag: PropTypes.Tag,
     title: PropTypes.string,
     imageSrc: PropTypes.string,
+    gifSrc: PropTypes.string,
     info: PropTypes.json,
     href: PropTypes.string
 }
 Item.defaultProps = {
     title: "Title",
     imageSrc: "https://via.placeholder.com/250",
+    gifSrc: "https://via.placeholder.com/250",
     info: {},
     href: ""
 }
