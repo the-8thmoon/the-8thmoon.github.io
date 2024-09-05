@@ -60,7 +60,9 @@ export function Item(props){
     const sections = info["sections"];
     const elements = sections.map(section => 
         section.hasOwnProperty("content") ?
-            <SimpleSection  title={section.title} content={section.content}/> : <NestedSection title={section.title} list={section.list}/>)
+        (section.hasOwnProperty("list") ?
+            <CombinedSection title={section.title} content={section.content} list={section.list} /> :
+            <SimpleSection  title={section.title} content={section.content}/>) : <NestedSection title={section.title} list={section.list}/>)
             
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -173,6 +175,16 @@ function NestedSection(props){
     return(
         <div className='info-section'>
             <SectionTitle title={props.title}/>
+            <ListSection list={props.list}/>
+        </div>
+    )
+}
+
+function CombinedSection(props){
+    return(
+        <div className='info-section'>
+            <SectionTitle title={props.title}/>
+            <p>{props.content}</p>
             <ListSection list={props.list}/>
         </div>
     )
