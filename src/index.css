@@ -263,12 +263,30 @@ a .nav-button:hover {
 
 .item-title{
     width: 100%;
+    display: flex;
     padding: 0 10px;
+    justify-content: space-between;
 }
-.item-title h2{
+
+
+.title-header h2{
     margin: -2.3% 0 0 0;
     color:#FBC531;
     font-size: 2em;
+}
+
+.btn-link {
+    background-color: hsl(200, 71%, 26%);
+    padding: 10px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn-link:hover{
+    background-color: #FBC531;
+    color: #242424;
 }
 
 .item-info{

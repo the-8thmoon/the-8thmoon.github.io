@@ -7,6 +7,7 @@
                 "img": "https://img.itch.zone/aW1nLzE3NDY2NDE1LnBuZw==/315x250%23c/NfyFkF.png",
                 "gif": "https://img.itch.zone/aW1hZ2UvMjkwMzkxMy8xNzY0MDIyMy5naWY=/347x500/fSDct1.gif",
                 "title": "Ant Scaled",
+                "href": "https://the8thmoon.itch.io/antscaled",
                 "info": {
                     "description": "RTS-like game where you command Ants, made for the GMTK Game Jam 2024",
                     "sections": [
@@ -102,12 +103,13 @@
                 "img": "https://img.itch.zone/aW1nLzEzMTI1NzcwLnBuZw==/315x250%23c/X0gvNg.png",
                 "gif": "https://img.itch.zone/aW1hZ2UvMjIxNTY2MS8xNzY1MTM1NC5naWY=/250x600/Dda57I.gif",
                 "title": "FreeZE",
+                "href": "https://alanbrito.itch.io/freeze",
                 "info": {
                     "description": "2D top-down puzzle game, made for a week-long game jam",
                     "sections": [
                         {
                             "title": "Motivation:",
-                            "content": "For the \"Do you wanna Jam?! 2023\" Game Jam, that ran for a week, with the theme of \"Freeze\" I decided to make a game where you play as \"Za\", a boy that has his sister \"Ze\" captured, and he has to go and Free her (Free Ze) by solving sokoban-like puzzles freezing melting rocks in order to push them over buttons"
+                            "content": "For the \"Do you wanna Jam?! 2023\" Game Jam, that ran for a week, with the theme of \"Freeze\" I decided to make a game where you play as \"Za\", a boy that has his sister \"Ze\" captured, and he has to go and Free her (Free Ze) by solving sokoban-like puzzles, freezing melting rocks in order to push them over buttons."
                         },
                         {
                             "title": "Roles:",
@@ -128,10 +130,10 @@
                             "title": "Main Features:",
                             "list": [
                                 {
-                                    "item": "Top Down Movement: The player moves in four directions (Vertical and Horizontal). The movement is grid-base with smooth animations for the transition between cells "
+                                    "item": "Top Down Movement: The player moves in four directions (Vertical and Horizontal). The movement is grid-base with smooth animations for the transition between cells."
                                 },
                                 {
-                                    "item": "Freeze and Push: The player can freeze rocks and push them around the level, these melt over time not being able to push them until they are freezed again."
+                                    "item": "Freeze and Push: The player can freeze rocks and push them around the level, these thaw over time not being able to push them until they are freezed again."
                                 },
                                 {
                                     "item": "Swtich Activation: Unfreezed rocks activate the buttons on the level's floor upon contact. These are not activated by the freezed rocks or by the player."
@@ -183,12 +185,13 @@
                 "img": "https://img.itch.zone/aW1nLzEwOTE1MDEzLnBuZw==/315x250%23c/vN6l%2Bf.png",
                 "gif": "https://img.itch.zone/aW1hZ2UvMTg1ODI2NC8xNzY1MTYzNS5naWY=/250x600/YNmlWp.gif",
                 "title": "White Wonders",
+                "href": "https://alanbrito.itch.io/white-wonders",
                 "info": {
                     "description": "VN Demo made for a VN focused game jam",
                     "sections": [
                         {
                             "title": "Motivation:",
-                            "content": "For the \"Winter Visual Novel Jam 2022\" I wanted to make a system to create Visual Novel and make a small functional demo with it. So this is more like an experimental project rather than a game. The system focused on Nodes where each Node represent an entity on the Visual Novel, like a Text, a TextBox, an Image, an Event, etc."
+                            "content": "For the \"Winter Visual Novel Jam 2022\" I wanted to make a system to create Visual Novel and make a small functional demo with it. So this is more like an experimental project rather than a game. The system focused on Nodes where each Node represent an entity on the Game, like a Text, a TextBox, an Image, an Event, etc."
                         },
                         {
                             "title": "Roles:",
@@ -277,53 +280,51 @@
                 "img": "https://img.itch.zone/aW1nLzQ0NTY4NDkucG5n/315x250%23c/jnlez%2F.png",
                 "gif": "https://img.itch.zone/aW1hZ2UvNzk2MDc3LzE3NjUxOTEzLmdpZg==/250x600/GII4fY.gif",
                 "title": "EventStory",
+                "href": "https://alanbrito.itch.io/event-story",
                 "info": {
                     "description": "3D First Person Point & Click, Text Interactive game, made for a School project",
                     "sections": [
                         {
                             "title": "Motivation:",
-                            "content": "For the GMTK Game Jam 2024, with the theme of \"Built to Scale\" I decided to make a game where you can spawn and command units (Ants) that you can use to explore a map covered with a fog of war, to find other structures that you can interact with."
+                            "content": "For a University course (2020), I had to make a prototype game combining two mechanics of two IGF Games, these were",
+                            "list": [
+                                {
+                                    "item": "Her Story: With the mechanic of searching for words to unfold the story."
+                                },
+                                {
+                                    "item": "Event [0]: With the mechanic of interacting with Terminals."
+                                }
+                            ]
                         },
                         {
                             "title": "Roles:",
-                            "content": "For this game I took the role of a solo-dev, so all the code and features were done by myself with the help of free Assets for the graphics."
+                            "content": "For this game I took the role of a solo-dev, so all the code and features were done by myself with the help of free Assets for the game environment and props."
                         },
                         {
                             "title": "Main Features:",
                             "list": [
                                 {
-                                    "item": "Spawning of units: Spawns unlimeted units (Ants) with the click of a button on screen."
+                                    "item": "First Person Controller: The player controls a character in first person view in a 3D Space."
                                 },
                                 {
-                                    "item": "Selection of units:",
+                                    "item": "Sliding Doors: Doors open vertically when the player is about to croos them."
+                                },
+                                {
+                                    "item": "Terminal Interaction:",
                                     "list": [
                                         {
-                                            "item": "Box Selection: Click and drag a box selection to select multiple units."
+                                            "item": "Terminal Activation: Looking at a terminal directly turns the screen on."
                                         },
                                         {
-                                            "item": "Individual Selection: Click on a single unit to select it."
+                                            "item": "Terminal Use: Clicking on an activated terminal freezes the camera, allowing you to use the terminal with the mouse."
                                         },
                                         {
-                                            "item": "Multiple Selection: Hold Left-CTRL + Click to select multiple units one at a time."
+                                            "item": "Terminal UI: The terminal has a command-line UI structure where you have some commands to interact with it"
                                         }
                                     ]
                                 },
                                 {
-                                    "item": "Selection of structures: Click on a structure to interact with it."
-                                },
-                                {
-                                    "item": "Movement of units with Pathfinding: Right Clicking on the map moves the selected units to that location avoiding obstacles and finding the best route to get there."
-                                },
-                                {
-                                    "item": "Fog of War: The map is covered by two layers of fog.",
-                                    "list": [
-                                        {
-                                            "item": "Dark Fog: This fog is pitch black and gets erased when units travel through the map."
-                                        },
-                                        {
-                                            "item": "Soft Fog: This fog lets you see the map but with a faded effect, it is located under the Dark Fog layer. Units and some structures have a defined radius where you can the see the clear map underneath."
-                                        }
-                                    ]
+                                    "item": "Terminal Search Feature: You can search words in the terminal's logs and it will return a list of logs containing that word."
                                 }
                             ]
                         },
@@ -334,30 +335,21 @@
                                     "item": "Unity: For the game engine.",
                                     "list": [
                                         {
-                                            "item": "Hex Tilemap System: For the map and fog of war (Dark Fog)."
+                                            "item": "Scriptable Objects: To make the terminal's log."
                                         },
                                         {
-                                            "item": "Input System: For the selection and command of units."
+                                            "item": "Scene View: To place the modular objects for the 3D space environment." 
                                         },
                                         {
-                                            "item": "NavMesh: For the pathfinding and movement of units."
+                                            "item": "Canvas UI: For UI interaction with the Terminals and display of UI."
                                         },
                                         {
-                                            "item": "Canvas UI: For UI interaction with structures."
+                                            "item": "Trigger Colliders: To trigger the sliding doors."
                                         },
                                         {
-                                            "item": "Sprite Mask 2D: For the Soft Fog of the fog of war."
-                                        },
-                                        {
-                                            "item": "WebGL Export: To generate a playable game in the browser."
+                                            "item": "Raycast Physics: To detect when a player looks at a terminal."
                                         }
                                     ]
-                                },
-                                {
-                                    "item": "Aseprite: To edit and create some pixel art graphics."
-                                },
-                                {
-                                    "item": "Autodesk Sketchbook: To create the game's cover image."
                                 }
                             ]
                         }

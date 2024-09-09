@@ -23,7 +23,7 @@ function Elements(){
                 <div>
                 <Separator title={element["title"]}/>
                 <div className="elements-content">
-                {element["items"].map(value => <Item itemTag={<Tag tag={value.tag}/>} imageSrc={value.img} gifSrc={value.gif} title={value.title} info={value.info}/>)
+                {element["items"].map(value => <Item itemTag={<Tag tag={value.tag}/>} imageSrc={value.img} href={value.href} gifSrc={value.gif} title={value.title} info={value.info}/>)
                 }
                 </div>
                 </div>
@@ -67,6 +67,7 @@ export function Item(props){
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() =>{
+        applyResize();
         window.addEventListener("resize", handleResize);
 
         return () => {
@@ -78,8 +79,7 @@ export function Item(props){
         setWidth(window.innerWidth);
     }
 
-            
-    useEffect(() => {
+    function applyResize(){
         const itemImgHeight = document.getElementsByClassName("item-img").item(0).clientHeight;
         const itemTitleHeight = document.getElementsByClassName("item-title").item(0).clientHeight;
         const infoContainers = document.getElementsByClassName("item-info");
@@ -92,25 +92,40 @@ export function Item(props){
                 infoContainers[i].setAttribute("style", "height: auto");
 
         }
+    }
+
+            
+    useEffect(() => {
+        applyResize();
     }, [width])
 
     return(
         <div className="item-container">
-            <div className='item-img-container'> 
+            <div className='item-img-container'>
+                <a href={props.href}>
                 <div className="item-img">                                                                                                                                                                                                                                                                                                            
                         <img className="main-img" src={props.imageSrc}></img>
                         <img className="hover-img" src={props.gifSrc}></img>
-                </div>    
+                </div>
+                </a>    
             </div>
             <div className='item-info-container'>
                 <div className="item-title">
+                    <div className="title-header">
                     <h2>{props.title}</h2>
                     {props.itemTag}
+                    </div>
+                    <div className="btn-header">
+                        <a href={props.href}>
+                            <div className="btn-link">
+                                <b>Play Game</b>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div className="item-info">
                     <p>{description}</p>
                     {elements}
-                    {/* <p>{props.description}</p> */}
                 </div>
             </div>
         </div>
