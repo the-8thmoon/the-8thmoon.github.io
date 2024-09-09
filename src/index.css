@@ -328,6 +328,9 @@ a .nav-button:hover {
     .info-section h3{
         font-size: 1em;
     }
+    .btn-link{
+        font-size: .8em;
+    }
     
 }
 
