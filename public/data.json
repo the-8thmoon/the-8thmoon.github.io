@@ -111,15 +111,15 @@
                         },
                         {
                             "title": "Roles:",
-							"content": "For this game I took the role of",
+                            "content": "For this game I took the role of",
                             "list": [
                                 {
                                     "item": "Programmer: Coded all system and features."
                                 },
-								{
+                                {
                                     "item": "Artist: Made the character, environment and objects in pixel art."
                                 },
-								{
+                                {
                                     "item": "Composer: Made two tracks for the game's music."
                                 }
                             ]
@@ -136,10 +136,10 @@
                                 {
                                     "item": "Swtich Activation: Unfreezed rocks activate the buttons on the level's floor upon contact. These are not activated by the freezed rocks or by the player."
                                 },
-								{
+                                {
                                     "item": "Reset Area: Pushing the reset button (or R key) resets the area where the player is in, affecting only the puzzle in that area."
                                 },
-								{
+                                {
                                     "item": "Mobile Support: The game can be played in a mobile's browser and it will detect it, showing on-screen buttons for touch interaction."
                                 }
                             ]
@@ -188,46 +188,57 @@
                     "sections": [
                         {
                             "title": "Motivation:",
-                            "content": "For the GMTK Game Jam 2024, with the theme of \"Built to Scale\" I decided to make a game where you can spawn and command units (Ants) that you can use to explore a map covered with a fog of war, to find other structures that you can interact with."
+                            "content": "For the \"Winter Visual Novel Jam 2022\" I wanted to make a system to create Visual Novel and make a small functional demo with it. So this is more like an experimental project rather than a game. The system focused on Nodes where each Node represent an entity on the Visual Novel, like a Text, a TextBox, an Image, an Event, etc."
                         },
                         {
                             "title": "Roles:",
-                            "content": "For this game I took the role of a solo-dev, so all the code and features were done by myself with the help of free Assets for the graphics."
+                            "content": "For this game I took the role of",
+                            "list": [
+                                {
+                                    "item": "Programmer: Coded the Node System"
+                                },
+                                {
+                                    "item": "Artist: Made the images used for the Visual Novel"
+                                }
+                            ]
                         },
                         {
                             "title": "Main Features:",
                             "list": [
                                 {
-                                    "item": "Spawning of units: Spawns unlimeted units (Ants) with the click of a button on screen."
-                                },
-                                {
-                                    "item": "Selection of units:",
+                                    "item": "For the VN itself:",
                                     "list": [
                                         {
-                                            "item": "Box Selection: Click and drag a box selection to select multiple units."
+                                            "item": "Text Display: The text appears character by character in the text boxes."
                                         },
                                         {
-                                            "item": "Individual Selection: Click on a single unit to select it."
+                                            "item": "Input Progression: Clicking on the screen or pressing Space makes the text finish the sentence or continuing to the next part if it is already finished."
                                         },
                                         {
-                                            "item": "Multiple Selection: Hold Left-CTRL + Click to select multiple units one at a time."
+                                            "item": "Text Boxes: There is 3 types of text boxes; Info Texts, Dialog Text, Narrator Text"
+                                        },
+                                        {
+                                            "item": "Mobile Support: The game can be played in a mobile's browser."
                                         }
                                     ]
                                 },
                                 {
-                                    "item": "Selection of structures: Click on a structure to interact with it."
-                                },
-                                {
-                                    "item": "Movement of units with Pathfinding: Right Clicking on the map moves the selected units to that location avoiding obstacles and finding the best route to get there."
-                                },
-                                {
-                                    "item": "Fog of War: The map is covered by two layers of fog.",
+                                    "item": "For the Node System",
                                     "list": [
                                         {
-                                            "item": "Dark Fog: This fog is pitch black and gets erased when units travel through the map."
+                                            "item": "Text Node: This Node is used for every text in the game."
                                         },
                                         {
-                                            "item": "Soft Fog: This fog lets you see the map but with a faded effect, it is located under the Dark Fog layer. Units and some structures have a defined radius where you can the see the clear map underneath."
+                                            "item": "Image Node: This Node is used to display images in the game."
+                                        },
+                                        {
+                                            "item": "Bool Node: This Node is used to toggle on/off elements in the game."
+                                        },
+                                        {
+                                            "item": "Composite Node: This Node is used to run two or more nodes at the same time."
+                                        },
+                                        {
+                                            "item": "Event Node: This Node is used to trigger code functions in the game."
                                         }
                                     ]
                                 }
@@ -240,19 +251,13 @@
                                     "item": "Unity: For the game engine.",
                                     "list": [
                                         {
-                                            "item": "Hex Tilemap System: For the map and fog of war (Dark Fog)."
+                                            "item": "Scriptable Objects: Scriptable Objects were used for the Node System, each node was a Scriptable Object."
                                         },
                                         {
-                                            "item": "Input System: For the selection and command of units."
+                                            "item": "Editor UI: Editor Scripting was used for making edits in the Scriptable Objects objects to make them a bit more user friendly when creating them."
                                         },
                                         {
-                                            "item": "NavMesh: For the pathfinding and movement of units."
-                                        },
-                                        {
-                                            "item": "Canvas UI: For UI interaction with structures."
-                                        },
-                                        {
-                                            "item": "Sprite Mask 2D: For the Soft Fog of the fog of war."
+                                            "item": "Canvas UI: For the elements of the game."
                                         },
                                         {
                                             "item": "WebGL Export: To generate a playable game in the browser."
@@ -260,10 +265,7 @@
                                     ]
                                 },
                                 {
-                                    "item": "Aseprite: To edit and create some pixel art graphics."
-                                },
-                                {
-                                    "item": "Autodesk Sketchbook: To create the game's cover image."
+                                    "item": "Autodesk Sketchbook: To create the game's images."
                                 }
                             ]
                         }
