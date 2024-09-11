@@ -114,18 +114,19 @@ a .nav-button:hover {
 
 
 .profile-header{
-    padding: 80px 40px 120px 40px;
+    padding: 80px 40px 80px 40px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .profile-bio{
     width: 60%;
+    align-self: center;
 }
 
 .profile-bio h1 {
     color: #FBC531;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .profile-bio p {
@@ -168,6 +169,49 @@ a .nav-button:hover {
 .profile-border:hover{
     transform: rotate(360deg);
 }
+
+.links-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+.links-container{
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+    justify-content: space-evenly;
+    border-radius: 100px;
+    box-shadow: inset 0px 2px 8px 0px black;
+    overflow: hidden;
+}
+
+
+.link-button{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    color: #FBC531;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.link-button:hover {
+    border-radius: 100px;
+    background-color: #FBC531;
+    color: #101010;
+}
+
+
+/* .link-button a{
+    
+    display: flex;
+}
+
+.link-button:hover a{
+} */
 
 
 .separator{
@@ -367,6 +411,11 @@ a .nav-button:hover {
 
 .profile-bio{
     width: 100%;
+}
+
+.links-container{
+    width: 100%;
+    margin: 25px 0px 30px 0px;
 }
 
 .elements-content{

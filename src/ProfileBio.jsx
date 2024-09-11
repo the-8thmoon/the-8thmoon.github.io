@@ -1,23 +1,17 @@
+import ProfileNav from "./ProfileNav"
 
 
 function ProfileBio(){
     return(
         <div className="profile-bio">
             <h1>Alan Brito - Moon Follower</h1>
-                {/* <p>
-                     Hello! My name is Alan, I'm a gamedev enthusiast, trying to do some art along the way.
-                     My main focus is gameplay programmer, I've been using Unity for about <b>5 years</b>. 
-                     Currently learning Godot.
-                     I consider myself an experimentation expert. 
-                     I love to delve into diverse gamedev areas, 
-                     just out of curiosity or to find a way to solve a self-imposed problem.
-                </p> */}
                 <p>
                      Hallo! I'm Alan. I'm an enthusiastic <b>Game Developer</b> based in Santiago, Chile.<br></br>
                      I like to experiment with different kinds of projects covering diverse areas of game development, but I specialize mostly in <b>Gameplay Programming</b>.<br></br>
                      My focus is to deliver functional and (somewhat) visually pleasing creations and experiences.
 
                 </p>
+                <ProfileNav/>
         </div>
     )
 }
