@@ -103,7 +103,7 @@ export function Item(props){
         <div className="item-container">
             <div className='item-img-container'>
                 <a href={props.href}>
-                <div className="item-img">                                                                                                                                                                                                                                                                                                            
+                <div className="item-img">
                         <img className="main-img" src={props.imageSrc}></img>
                         <img className="hover-img" src={props.gifSrc}></img>
                 </div>

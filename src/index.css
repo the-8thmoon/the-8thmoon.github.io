@@ -292,11 +292,11 @@ a .nav-button:hover {
     display: block;
 }
 
-.item-img:hover .main-img{
+.item-container:hover .main-img{
     display: none;
 }
 
-.item-img:hover .hover-img{
+.item-container:hover .hover-img{
     display: block;
     width: 100%;
 }
