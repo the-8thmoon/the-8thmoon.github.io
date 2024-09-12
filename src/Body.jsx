@@ -8,6 +8,7 @@ function Body() {
         <div className="body-page">
             <Profile />
             {/* <ProfileNav/> */}
+            <hr></hr>
             <Elements />
         </div>
     )

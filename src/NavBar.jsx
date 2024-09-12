@@ -1,6 +1,8 @@
 import Logo from "./Logo"
 import PropTypes from 'prop-types'
 
+import data from '../public/data.json'
+
 function NavBar(){
 
     const props = {name: "label", target: "", _class:"nav-button"}
@@ -10,8 +12,9 @@ function NavBar(){
             <div className="nav-bar">
                 <a href="/"><Logo/></a>
                 <div className="nav-buttons-container">
-                    <NavButton label="Projects" target="#Projects"/>
-                    {/* <NavButton label="Portfolio" target="/portfolio/"/> */}
+                    {
+                        data.map(element => <NavButton label={element["id"]} target={"#"+element["id"]}/>)
+                    }
                 </div>
             </div>
         </nav>
